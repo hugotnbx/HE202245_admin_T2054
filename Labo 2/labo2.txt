@@ -1,0 +1,14 @@
+A ajouter au resolver pour que ça marche : 
+
+
+zone "formation.lab." IN {
+        type forward;
+        forwarders { 192.168.0.2; };
+        forward only;
+};
+
+zone "0.168.192.in-addr.arpa." IN {
+        type forward;
+        forwarders { 192.168.0.2; };
+        forward only;
+};
